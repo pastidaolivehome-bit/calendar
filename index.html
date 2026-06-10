@@ -3,17 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Κρατήσεις Καταλύματος</title>
+    <title>Ημερολόγιο Κρατήσεων</title>
     <style>
-        body { font-family: sans-serif; text-align: center; padding: 20px; }
-        .calendar-container { max-width: 800px; margin: auto; }
-        iframe { border: 0; width: 100%; height: 600px; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 20px; background-color: #f9f9f9; }
+        h1 { text-align: center; color: #333; }
+        
+        /* Στυλ για τον πίνακα */
+        .table-container { overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; background-color: white; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: center; }
+        th { background-color: #4CAF50; color: white; }
+        tr:nth-child(even) { background-color: #f2f2f2; }
+        
+        /* Responsive για κινητά */
+        @media screen and (max-width: 600px) {
+            th, td { padding: 8px; font-size: 12px; }
+        }
     </style>
 </head>
 <body>
-    <h1>Διαθεσιμότητα Καταλύματος</h1>
-    <div class="calendar-container">
-        <iframe src="https://calendar.google.com/calendar/u/1?cid=cGFzdGlkYW9saXZlaG9tZUBnbWFpbC5jb20"></iframe>
+
+    <h1>Ημερολόγιο Κρατήσεων</h1>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Άφιξη</th>
+                    <th>Αναχώρηση</th>
+                    <th>Όνομα</th>
+                    <th>Ενήλικες</th>
+                    <th>Παιδιά</th>
+                    <th>Πλατφόρμα</th>
+                    <th>Σχόλιο</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ΠΕΜ 18/06/2026</td>
+                    <td>ΠΕΜ 25/06/2026</td>
+                    <td>Μαρία</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>Google</td>
+                    <td>Απο Κρήτη με καράβι</td>
+                </tr>
+				 <tr>
+                    <td>ΤΡΙ 30/06/2026</td>
+                    <td>ΤΡΙ 14/07/2026</td>
+                    <td>Bernhard</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>Airbnb</td>
+                    <td></td>
+                </tr>
+				<tr>
+                    <td>ΣΑΒ 25/07/2026</td>
+                    <td>ΤΡΙ 28/07/2026</td>
+                    <td>Georgios Karpathakis</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>Airbnb</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>ΔΕΥ 03/08/2026</td>
+                    <td>ΔΕΥ 10/06/2026</td>
+                    <td>K Aysha</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>Booking</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>ΤΕΤ 26/08/2026</td>
+                    <td>ΠΕΜ 03/09/2026</td>
+                    <td>Mohamad Hussein</td>
+                    <td>4</td>
+                    <td></td>
+                    <td>Booking</td>
+                    <td>Αεροπλάνο 20:10</td>
+                </tr>
+                </tbody>
+        </table>
     </div>
+
 </body>
 </html>
